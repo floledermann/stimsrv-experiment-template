@@ -3,7 +3,6 @@
 
 module.exports = {
   
-welcome:
-`Welcome to this experiment!`,
+welcome: `Welcome to this experiment!`,
 
 }

@@ -16,6 +16,10 @@ Run **run-debug.bat** during development to start the experiment in debugging mo
 
 Run **run.bat** to start the experiment for a regular session.
 
+## Licensing your experiment
+
+While this template is licensed under der [MIT License](https://opensource.org/licenses/MIT), it does not include a LICENSE file or make any assumtions about the license you are planning to use for your experiment. Consider licensing your experiment under an appropriate open source license.
+
 ## Documenting your experiment
 
 The content below can serve as a template to document your experiment in this readme so others can run it. Delete everything above the line once you're ready.
