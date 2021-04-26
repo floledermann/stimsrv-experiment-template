@@ -3,7 +3,7 @@ const pause = require("stimsrv/task/pause");
 
 const mainTask = require("./src/task/mainTask.js");   
 
-const setup = require("./setup-lab.js");
+const setup = require("./devices-roles.js");
 
 const messages = require("./messages.js");
 
