@@ -21,7 +21,8 @@ module.exports = {
       message: messages.welcome
     }),  
     
-    mainTask(),
+    // TODO: implement task in src/task/mainTask.js and initialize here 
+    //mainTask(),
     
     pause({
       message: {
