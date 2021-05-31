@@ -1,4 +1,4 @@
 
-call npx nodemon --exec "npx" stimsrv experiment.js
+call npm run experiment-monitor
 
 pause

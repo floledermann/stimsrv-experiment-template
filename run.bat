@@ -1,4 +1,4 @@
 
-call npx stimsrv experiment.js
+call npm run experiment
 
 pause
