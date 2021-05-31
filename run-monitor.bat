@@ -1,4 +1,4 @@
 
-call npx nodemon --exec "npx" stimsrv experiment-wayfinding.js
+call npx nodemon --exec "npx" stimsrv experiment.js
 
 pause
