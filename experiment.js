@@ -1,7 +1,7 @@
 
 const pause = require("stimsrv/task/pause");
 
-const mainTask = require("./src/task/mainTask.js");   
+const mainTask = require("./tasks/mainTask.js");   
 
 const setup = require("./devices-roles.js");
 
@@ -21,8 +21,8 @@ module.exports = {
       message: messages.welcome
     }),  
     
-    // TODO: implement task in src/task/mainTask.js and initialize here 
-    //mainTask(),
+    // TODO: implement task in tasks/mainTask.js and initialize here 
+    mainTask(),
     
     pause({
       message: {
