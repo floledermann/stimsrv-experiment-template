@@ -1,6 +1,8 @@
 
 const parameterController = require("stimsrv/controller/parameterController");
 
+const htmlButtons = require("stimsrv/ui/htmlButtons");
+
 const DEFAULTS = {
   parameters: {
     
@@ -16,12 +18,15 @@ module.exports = function(config) {
     name: "main_task",
     description: "The main task of the experiment",
     ui: function(context) {
+      
+      let buttons = htmlButtons("Next");
+      
       return {
         interfaces: {
           display: null,
-          response: null,
+          response: buttons,
           monitor: null,
-          control: null,
+          control: buttons
         }
       }
     },
