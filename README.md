@@ -8,13 +8,13 @@ Refer to the [stimsrv documentation](https://github.com/floledermann/stimsrv/) f
 
 ## Helper Scripts
 
-Run **install.bat** (or `npm i` on the command line) after cloning the repository to install stimsrv and required libraries.
+Run **install.bat** (or **`npm i`** on the command line) after cloning the repository to install stimsrv and required libraries.
 
-Run **run-monitor.bat** (or `npm run experiment-monitor` on the command line) during development to start the experiment and automatically reload when your code changes.
+Run **run-monitor.bat** (or **`npm run experiment-monitor`** on the command line) during development to start the experiment and automatically reload when your code changes.
 
-Run **run-debug.bat** (or `npm run experiment-debug` on the command line) during development to start the experiment in debugging mode. You can then use your browser's developer tools to debug the code.
+Run **run-debug.bat** (or **`npm run experiment-debug`** on the command line) during development to start the experiment in debugging mode. You can then use your browser's developer tools to debug the code.
 
-Run **run.bat** (or `npm run experiment` on the command line) to start the experiment for a regular session.
+Run **run.bat** (or **`npm run experiment`** on the command line) to start the experiment for a regular session.
 
 ## Licensing your experiment
 
@@ -36,7 +36,7 @@ Clone this repository and run **install.bat** (or `npm i` on the command line) a
 
 ## Running the experiment
 
-Run **run.bat** (or `npx stimsrv experiment-wayfinding.js` on the command line) to start the experiment for a regular session.
+Run **run.bat** (or **`npm run experiment`** on the command line) to start the experiment for a regular session.
 
 Open a web browser on the target device(s) and open one of the URLs shown in the stimsrv output. (Note: the accessibility of the stimsrv server from your target devices may depend on your network configuration - contact your system administrator if you cannot connect to stimsrv from your client device.)
 
