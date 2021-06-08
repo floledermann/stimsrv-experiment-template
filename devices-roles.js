@@ -40,12 +40,12 @@ module.exports = {
     {
       role: "display",
       description: "Stimulus Display",
-      devices: ["display","dev"],
+      devices: ["supervisor","display","dev"],
       interfaces: ["display"]
     },
     {
       role: "supervisor",
-      description: "Supervisor",
+      description: "Supervisor Screen",
       devices: ["supervisor","dev"],
       interfaces: ["monitor", "control"]
     },
