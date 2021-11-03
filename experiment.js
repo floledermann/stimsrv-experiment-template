@@ -1,10 +1,10 @@
 
 const pause = require("stimsrv/task/pause");
+const sequence = require("stimsrv/controller/sequence");
 
 const mainTask = require("./tasks/mainTask.js");   
 
 const setup = require("./devices-roles.js");
-
 const messages = require("./messages.js");
 
 // stimsrv experiment definition
@@ -22,7 +22,10 @@ module.exports = {
     }),  
     
     // TODO: implement task in tasks/mainTask.js and initialize here 
-    mainTask(),
+    mainTask({
+      // TODO: define condition properties
+      property1: sequence([1,2]), // This will end the task after two trials
+    }),
     
     pause({
       message: {

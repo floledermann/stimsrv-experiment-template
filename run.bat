@@ -1,4 +1,3 @@
-
-call npm run experiment
+call npm run experiment-open
 
 pause

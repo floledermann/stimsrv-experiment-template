@@ -1,35 +1,35 @@
 
-const parameterController = require("stimsrv/controller/parameterController");
-
+const simpleTask = require("stimsrv/task/simpleTask");
 const htmlButtons = require("stimsrv/ui/htmlButtons");
+const canvasRenderer = require("stimsrv/stimulus/canvas/canvasRenderer");
 
 const DEFAULTS = {
-  parameters: {
-    
-  }
+  name: "main_task",
+  description: "The main task of the experiment",
+  // TODO default condition properties
+  text: "TO DO: Implement custom task"
 };
 
-module.exports = function(config) {
-  
-  config = Object.assign({}, DEFAULTS, config);
-  config.parameters = Object.assign({}, DEFAULTS.parameters, config.parameters);
-    
-  return {
-    name: "main_task",
-    description: "The main task of the experiment",
-    ui: function(context) {
-      
-      let buttons = htmlButtons("Next");
-      
-      return {
-        interfaces: {
-          display: null,
-          response: buttons,
-          monitor: null,
-          control: buttons
-        }
-      }
-    },
-    controller: parameterController({parameters: config.parameters})
-  }
+function renderStimulus(ctx2d, condition, context, stimsrvAPI) {
+  // TODO implement render function
+  ctx2d.fillText(condition.text, 0, 0);
+
 }
+
+// TODO define interface components
+let renderer = config => canvasRenderer(renderStimulus);
+let buttons = config => htmlButtons("Next");
+
+const task = simpleTask({
+  defaults: DEFAULTS,
+  // TODO assign interface components to interfaces
+  interfaces: {
+    display: renderer,
+    monitor: renderer,
+    response: buttons,
+  }
+});
+
+
+module.exports = task;
+
